@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jerome R. Scelza — Biomedical Engineer, Inventor &amp; Founder</title>
+<meta name="description" content="Jerome R. Scelza, MS — biomedical engineer, inventor and diagnostics executive. Two FDA 510(k) clearances, 80+ patent estate, four venture-backed companies. Founder & CEO of Manifold Health.">
+<meta property="og:title" content="Jerome R. Scelza — Biomedical Engineer, Inventor & Founder">
+<meta property="og:description" content="Regulated diagnostics, at-home blood collection, computer vision and biological intelligence. Founder & CEO of Manifold Health.">
+<meta property="og:type" content="profile">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0f1a17">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1a17'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='30' fill='%23d9f0e6'%3EJS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Jerome R. Scelza","jobTitle":"Founder & CEO, Manifold Health","email":"mailto:scelzajr@gmail.com","address":{"@type":"PostalAddress","addressLocality":"New York","addressRegion":"NY"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Johns Hopkins University"},{"@type":"CollegeOrUniversity","name":"New York University"}],"sameAs":["https://www.linkedin.com/in/jerome-scelza-8560b0108/"]}
+</script>
+<style>
+:root{
+  --bg:#f7f6f2;--surface:#ffffff;--ink:#14201c;--muted:#5b6762;--line:#e3e1da;
+  --accent:#1f6f57;--accent-soft:#e3f0ea;--chip:#efeee8;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;--sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0f1a17;--surface:#15221e;--ink:#e8efec;--muted:#9aaba4;--line:#24352f;
+  --accent:#6fd0a8;--accent-soft:#1a3029;--chip:#1c2b26;
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;margin:0}
+h2{font-size:clamp(1.7rem,3.2vw,2.3rem);margin-bottom:8px}
+.eyebrow{font:600 .75rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.lede{color:var(--muted);max-width:680px;margin:0 0 36px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{font-family:var(--serif);font-weight:600;color:var(--ink);white-space:nowrap}
+.links{display:flex;gap:22px;overflow-x:auto;scrollbar-width:none}
+.links::-webkit-scrollbar{display:none}
+.links a{color:var(--muted);font-size:.9rem;white-space:nowrap}
+.links a:hover{color:var(--ink);text-decoration:none}
+
+/* hero */
+.hero{padding:96px 0 72px}
+.hero h1{font-size:clamp(2.6rem,6.5vw,4.6rem);letter-spacing:-.01em}
+.hero .role{font-family:var(--serif);font-size:clamp(1.2rem,2.4vw,1.55rem);color:var(--muted);margin:18px 0 26px;max-width:760px;font-weight:400}
+.hero p{max-width:700px;margin:0 0 32px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:500;font-size:.95rem;border:1px solid var(--line);color:var(--ink);background:var(--surface)}
+.btn:hover{text-decoration:none;border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:96px}
+.stat{background:var(--surface);padding:26px 22px}
+.stat b{display:block;font-family:var(--serif);font-size:2.2rem;font-weight:600;color:var(--accent);line-height:1}
+.stat span{display:block;margin-top:10px;font-size:.88rem;color:var(--muted);line-height:1.45}
+
+section{padding:0 0 96px}
+
+/* work cards */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;flex-direction:column}
+.card .tag{font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.card h3{font-size:1.4rem;margin-bottom:10px}
+.card p{margin:0 0 16px;color:var(--muted);font-size:.95rem}
+.card ul{margin:0 0 18px;padding-left:18px;font-size:.93rem}
+.card li{margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.chip{font-size:.75rem;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--muted)}
+.chip.hl{background:var(--accent-soft);color:var(--accent);font-weight:500}
+
+/* timeline */
+.tl{border-left:2px solid var(--line);margin-left:6px}
+.job{position:relative;padding:0 0 38px 30px}
+.job:before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.job .when{font-size:.82rem;color:var(--muted);font-weight:500}
+.job h3{font-size:1.25rem;margin:4px 0 2px}
+.job .org{color:var(--accent);font-weight:500;font-size:.95rem;margin-bottom:10px}
+.job ul{margin:0;padding-left:18px;max-width:820px}
+.job li{margin-bottom:6px;font-size:.95rem}
+
+/* lists */
+.list{border-top:1px solid var(--line)}
+.item{display:grid;grid-template-columns:110px 1fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}
+.item .yr{font-family:var(--serif);color:var(--muted);font-size:1.05rem}
+.item h3{font-size:1.12rem;margin-bottom:4px;font-family:var(--sans);font-weight:600}
+.item .meta{font-size:.88rem;color:var(--accent);margin-bottom:6px}
+.item p{margin:0;color:var(--muted);font-size:.93rem}
+
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.press{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.press .yr{font-size:.8rem;color:var(--muted);font-weight:600;letter-spacing:.05em}
+.press h3{font:600 1rem/1.4 var(--sans);margin:6px 0}
+.press p{margin:0;font-size:.88rem;color:var(--muted)}
+
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.skill{border-top:2px solid var(--accent);padding-top:14px}
+.skill h3{font:600 .8rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+.skill p{margin:0;color:var(--muted);font-size:.95rem}
+
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:48px;text-align:center}
+.contact h2{margin-bottom:12px}
+.contact p{color:var(--muted);max-width:560px;margin:0 auto 28px}
+.contact .btns{justify-content:center}
+footer{padding:32px 0 48px;color:var(--muted);font-size:.85rem}
+
+@media (max-width:860px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .grid,.skills{grid-template-columns:1fr}
+  .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .hero{padding:64px 0 48px}
+  .cols{grid-template-columns:1fr}
+  .item{grid-template-columns:1fr;gap:4px}
+  .contact{padding:32px 20px}
+  .brand{display:none}
+  .stat b{font-size:1.8rem}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top">Jerome R. Scelza</a>
+  <div class="links">
+    <a href="#work">Work</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#patents">Patents</a><a href="#press">Press</a><a href="#contact">Contact</a>
+  </div>
+</div></nav>
+
+<main id="top">
+<div class="wrap">
+
+<header class="hero">
+  <div class="eyebrow">Biomedical Engineer · Inventor · Founder</div>
+  <h1>Jerome R. Scelza, MS</h1>
+  <p class="role">I take regulated diagnostics and integrated hardware/software products from first prototype through FDA clearance, manufacturing and market launch.</p>
+  <p>15+ years across medical devices, computer vision and at-home diagnostics. Former Co-CEO/CTO of Drawbridge Health (Thorne HealthTech), co-founder/CTO of Oova, and today founder &amp; CEO of Manifold Health, the biological-intelligence and remote-monitoring company behind Sidewalk Health. Four venture-backed companies, a nine-figure exit, and a research record that started at Mount Sinai.</p>
+  <div class="btns">
+    <a class="btn primary" href="assets/Jerome_Scelza_Resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+    <a class="btn" href="assets/Jerome_Scelza_Biosketch.pdf" target="_blank" rel="noopener">Research biosketch</a>
+    <a class="btn" href="https://www.linkedin.com/in/jerome-scelza-8560b0108/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="stat"><b>2</b><span>FDA Class II 510(k) clearances, plus CE Mark &amp; Japan PMDA</span></div>
+  <div class="stat"><b>80+</b><span>Patent estate grown from 10 granted/pending assets</span></div>
+  <div class="stat"><b>10k+</b><span>Remote blood samples collected at population scale, 99.9% processed</span></div>
+  <div class="stat"><b>4</b><span>Venture-backed companies founded or led</span></div>
+</div>
+
+<!-- WORK -->
+<section id="work">
+  <div class="eyebrow">Selected work</div>
+  <h2>Products and platforms</h2>
+  <p class="lede">From an upper-arm blood collection device to a smartphone hormone reader, here are the systems I've invented, built and taken to market.</p>
+  <div class="grid">
+
+    <article class="card">
+      <div class="tag">Drawbridge Health · 2022–2024</div>
+      <h3>NanoDrop</h3>
+      <p>Dual nano-lancet upper-arm blood collection device for over-the-counter use. It was the first OTC blood-lancing device labeled for the upper arm cleared in the United States.</p>
+      <ul>
+        <li>Led it through FDA 510(k) clearance (<a href="https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K223826" target="_blank" rel="noopener">K223826</a>) ahead of schedule and under budget; named primary company contact in the FDA summary</li>
+        <li>Human-factors, pain/preferred-method, penetration-depth, vacuum, sharps-safety, biocompatibility, sterilization and shelf-life programs</li>
+        <li>CE Mark certification in 2023</li>
+      </ul>
+      <div class="chips"><span class="chip hl">FDA Class II OTC</span><span class="chip">ISO 13485</span><span class="chip">ISO 14971</span><span class="chip">IEC 62366</span></div>
+    </article>
+
+    <article class="card">
+      <div class="tag">Drawbridge Health · Thorne HealthTech</div>
+      <h3>OneDraw</h3>
+      <p>Upper-arm capillary blood collection system, commercialized and deployed globally across clinical research, defense and pharma programs.</p>
+      <ul>
+        <li>OneDraw A1C Test System, FDA 510(k) <a href="https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K183230" target="_blank" rel="noopener">K183230</a>; Japan PMDA certification (2022)</li>
+        <li>Cambridge/MRC Fenland study: 4,023 participants and 10,000+ remote samples</li>
+        <li>DoD PROMETHEUS / Cancer Moonshot 2.0 with thousands of devices deployed</li>
+        <li>MedTech Breakthrough Best Overall Medical Device Product (2023)</li>
+      </ul>
+      <div class="chips"><span class="chip hl">Population scale</span><span class="chip">PMDA</span><span class="chip">CLIA/CAP labs</span><span class="chip">Design transfer</span></div>
+    </article>
+
+    <article class="card">
+      <div class="tag">Oova · Co-Founder &amp; CTO · 2016–2021</div>
+      <h3>Smartphone quantitative hormone diagnostics</h3>
+      <p>Invented a patented platform that reads at-home LH and PdG lateral-flow tests quantitatively using the phone camera, across devices and lighting conditions.</p>
+      <ul>
+        <li>Co-inventor, U.S. Patent 12,591,974 and international family (GB2591614B)</li>
+        <li>Built the product from prototype to commercial launch of a Mount Sinai spinout; supported a $10.3M Series A (investors incl. Virgin Group, Spero Ventures)</li>
+        <li>Platform data underpins peer-reviewed analyses (ASRM 2022; <em>Medicina</em> 2023)</li>
+      </ul>
+      <div class="chips"><span class="chip hl">Computer vision</span><span class="chip">Assay design</span><span class="chip">iOS / Android</span><span class="chip">Signal processing</span></div>
+    </article>
+
+    <article class="card">
+      <div class="tag">Manifold Health · 2026–Present</div>
+      <h3>Biological intelligence infrastructure</h3>
+      <p>Self-collected blood, curated lab panels, proprietary biological risk indices and outcome verification for payors, employers and provider networks. Sidewalk Health is the member-facing product.</p>
+      <ul>
+        <li>Launched a CLIA-certified laboratory (Lumen Diagnostics) and national at-home diagnostic infrastructure</li>
+        <li>Structured the first health plan covering lab-grade at-home blood testing as a benefit in every plan design (50-state group insurance trust)</li>
+        <li>AI care navigator, digital requisitions and longitudinal biomarker programs</li>
+      </ul>
+      <div class="chips"><span class="chip hl">Payer GTM</span><span class="chip">CLIA lab</span><span class="chip">CMS-HCC · HEDIS</span><span class="chip">AI navigation</span></div>
+    </article>
+
+    <article class="card">
+      <div class="tag">Mount Sinai · <em>npj Digital Medicine</em> 2018</div>
+      <h3>Smart mirror for passive health monitoring</h3>
+      <p>A working smart-mirror platform combining computer vision, face recognition, mood detection, respiratory-rate estimation and environmental sensing.</p>
+      <div class="chips"><span class="chip hl">Computer vision</span><span class="chip">IoT</span><span class="chip">Digital biomarkers</span></div>
+    </article>
+
+    <article class="card">
+      <div class="tag">Mount Sinai · LEO Pharma · 2017</div>
+      <h3>Hyperspectral skin-inflammation imaging</h3>
+      <p>Prototyped the hyperspectral imaging apparatus for a registered interventional trial (<a href="https://clinicaltrials.gov/study/NCT03192280" target="_blank" rel="noopener">NCT03192280</a>) built to detect inflammation before it becomes visible, and did the exploratory image processing and analysis.</p>
+      <div class="chips"><span class="chip hl">Imaging hardware</span><span class="chip">Spectroscopy</span><span class="chip">Clinical trial</span></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="eyebrow">Experience</div>
+  <h2>Career</h2>
+  <p class="lede">I started as a hands-on mechanical and biomedical engineer, then moved into R&amp;D leadership, CTO and CEO roles.</p>
+  <div class="tl">
+    <div class="job">
+      <div class="when">Jan 2026 – Present</div>
+      <h3>Founder &amp; Chief Executive Officer</h3>
+      <div class="org">Manifold Health · Sidewalk Health · New York, NY</div>
+      <ul>
+        <li>Own product and technology strategy, pricing architecture, budget, compliance and hiring across engineering, data science, clinical and commercial.</li>
+        <li>National partnerships with wellness companies, insurance brokers, employee-benefits firms and health systems; wholesale supplement agreement with Thorne.</li>
+        <li>Designed Medicare Advantage and managed-care programs built on CMS-HCC, HEDIS and Star-rating economics.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="when">Apr 2021 – Jul 2025</div>
+      <h3>Co-CEO &amp; Chief Technology Officer</h3>
+      <div class="org">Drawbridge Health · Thorne HealthTech</div>
+      <ul>
+        <li>Ran the regulated-device business end to end: strategy, R&amp;D, quality/regulatory, manufacturing, lab integration and commercialization. Deployed $15M+ from acquisition through launch.</li>
+        <li>Two FDA 510(k)s, CE Mark and PMDA, with partnerships including Sumitomo Dainippon Pharma, Parexel/Synexa and GenTegra.</li>
+        <li>Grew the IP portfolio from 10 to 80+ granted and pending patents; sole inventor on the next-generation collection family.</li>
+        <li>Secured $1M+ in strategic partnerships in the first year of commercialization; products recognized by Fast Company and Red Dot.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="when">Jan 2021 – Nov 2023</div>
+      <h3>Entrepreneur in Residence, Transformational Technologies</h3>
+      <div class="org">Thorne HealthTech</div>
+      <ul>
+        <li>Championed Thorne's $10M acquisition of blood-collection technology. Led diligence, valuation and deal structuring, then took over operating leadership of the business.</li>
+        <li>Evaluated device, diagnostic and life-science technologies for the executive team.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="when">Jun 2017 – Jan 2021</div>
+      <h3>Biomedical Scientist, AI/ML</h3>
+      <div class="org">Thorne Research</div>
+      <ul><li>Built ML and computer-vision systems for clinical applications, including a $500K pharmaceutical program for automated acne detection and severity grading.</li></ul>
+    </div>
+    <div class="job">
+      <div class="when">Aug 2016 – Apr 2021</div>
+      <h3>Co-Founder &amp; Chief Technology Officer</h3>
+      <div class="org">Oova</div>
+      <ul>
+        <li>Invented and led development of the patented smartphone hormone diagnostic, from prototype to launch.</li>
+        <li>Led FDA registration, validation and commercialization; scaled to $50K+ MRR. Oova raised $12.5M+ overall.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="when">Jun 2017 – Oct 2018</div>
+      <h3>Engineering Program Manager</h3>
+      <div class="org">Icahn School of Medicine at Mount Sinai · Institute for Next Generation Healthcare</div>
+      <ul>
+        <li>Led a 20-person team of engineers, scientists and PMs with a $7M budget.</li>
+        <li>Directed programs across devices, imaging, wearables, IoT, ML and lab automation, including Lab100 and the LEO Pharma hyperspectral trial.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="when">Jan 2012 – Jun 2017</div>
+      <h3>Biomedical Engineer / Research Staff</h3>
+      <div class="org">Icahn School of Medicine at Mount Sinai</div>
+      <ul><li>Mechanical design, DFM, microfluidics, spectroscopy, imaging, microscopy, 3D printing, wearable sensors and IoT data acquisition. Also did surgical-planning 3D printing, including a severe scoliotic spine and personalized hip implant models.</li></ul>
+    </div>
+    <div class="job">
+      <div class="when">Jan 2011 – Jun 2013</div>
+      <h3>Mechanical Engineer</h3>
+      <div class="org">Portent Technologies</div>
+      <ul><li>Designed heavy-lift quadcopter structures and led CAD/FEA, DFM, prototyping and electromechanical/control integration.</li></ul>
+    </div>
+  </div>
+
+  <div class="skills" style="margin-top:24px">
+    <div class="skill"><h3>FDA / Global regulatory</h3><p>Class II OTC 510(k), CE Mark, PMDA, FDA registration; 21 CFR 820, ISO 13485, ISO 14971, IEC 62366.</p></div>
+    <div class="skill"><h3>R&amp;D / Design</h3><p>Upper-arm blood collection, assays, computer vision, signal processing, integrated hardware/software and usability.</p></div>
+    <div class="skill"><h3>Manufacturing</h3><p>CM selection, scale-up, supplier management, DFM/design transfer, packaging/fulfillment and lab integration.</p></div>
+    <div class="skill"><h3>Business</h3><p>P&amp;L, portfolio strategy, IP strategy, M&amp;A diligence, pharma/lab partnerships, payer and consumer go-to-market.</p></div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="eyebrow">Research</div>
+  <h2>Publications &amp; clinical studies</h2>
+  <p class="lede">Peer-reviewed work and human-subject research covering digital biomarkers, computational imaging, decentralized blood collection and reproductive diagnostics.</p>
+  <div class="list">
+    <div class="item"><div class="yr">2026</div><div>
+      <h3>PFAS exposure biomonitoring in U.S. Veterans</h3>
+      <div class="meta"><em>J. Exposure Science &amp; Environmental Epidemiology</em> · <a href="https://doi.org/10.1038/s41370-026-00884-5" target="_blank" rel="noopener">DOI</a></div>
+      <p>Independent VA validation of OneDraw capillary blood against matched venous plasma in 133 Veterans using UHPLC-MS/MS.</p>
+    </div></div>
+    <div class="item"><div class="yr">2023–25</div><div>
+      <h3>SODIAT-1 dietary intake assessment trial</h3>
+      <div class="meta">Imperial College London · Univ. of Reading · MRC Cambridge · <a href="https://www.isrctn.com/ISRCTN13562899" target="_blank" rel="noopener">ISRCTN13562899</a></div>
+      <p>Randomised crossover trial in which participants self-collected upper-arm capillary blood with OneDraw. <em>F1000Research</em> 2024;13:1144.</p>
+    </div></div>
+    <div class="item"><div class="yr">2023</div><div>
+      <h3>Longitudinal quantitative hormone monitoring</h3>
+      <div class="meta"><em>Medicina</em> · <a href="https://doi.org/10.3390/medicina59071348" target="_blank" rel="noopener">DOI</a></div>
+      <p>Quantitative LH and PdG data from 1,233 women on the Oova platform, used to characterize cycle variability.</p>
+    </div></div>
+    <div class="item"><div class="yr">2022</div><div>
+      <h3>Remote blood collection at population scale: Cambridge Fenland study</h3>
+      <div class="meta"><em>Journal of Telemedicine and Telecare</em> · <a href="https://doi.org/10.1177/1357633X221093434" target="_blank" rel="noopener">DOI</a></div>
+      <p>~4,023 participants and 10,000+ remotely collected samples; 99.9% of samples received were successfully processed. Also used for SARS-CoV-2 serosurveillance.</p>
+    </div></div>
+    <div class="item"><div class="yr">2022</div><div>
+      <h3>Embracing the potential of at-home blood testing</h3>
+      <div class="meta"><em>Today's Clinical Lab</em> · Author</div>
+      <p>Industry perspective on decentralized diagnostics and patient-centric blood collection.</p>
+    </div></div>
+    <div class="item"><div class="yr">2020</div><div>
+      <h3>Sleep in the natural environment: a pilot study</h3>
+      <div class="meta"><em>Sensors</em> 20(5):1378 · Mount Sinai IRB #15-01012 · <a href="https://doi.org/10.3390/s20051378" target="_blank" rel="noopener">DOI</a></div>
+      <p>Co-author. Contributed methodology, software, signal processing and data engineering for a 21-participant study using Fitbit, Withings, Hexoskin and Oura Ring.</p>
+    </div></div>
+    <div class="item"><div class="yr">2018</div><div>
+      <h3>Reflecting health: smart mirrors for personalized medicine</h3>
+      <div class="meta"><em>npj Digital Medicine</em> · <a href="https://doi.org/10.1038/s41746-018-0068-7" target="_blank" rel="noopener">DOI</a></div>
+      <p>Miotto R, Danieletto M, Scelza JR, Kidd BA, Dudley JT.</p>
+    </div></div>
+    <div class="item"><div class="yr">2018</div><div>
+      <h3>Lab100: next-generation preventive health</h3>
+      <div class="meta">Mount Sinai Institute for Next Generation Healthcare</div>
+      <p>Contributed to study design and data analysis for a longitudinal clinical research environment that combined blood testing with body composition, cognition, balance and digital assessments.</p>
+    </div></div>
+    <div class="item"><div class="yr">2017</div><div>
+      <h3>Skin IaM: exploratory skin inflammation imaging trial</h3>
+      <div class="meta">LEO Pharma / Mount Sinai · <a href="https://clinicaltrials.gov/study/NCT03192280" target="_blank" rel="noopener">NCT03192280</a></div>
+      <p>Researcher; built the hyperspectral imaging apparatus and handled image processing and analysis.</p>
+    </div></div>
+  </div>
+</section>
+
+<!-- PATENTS -->
+<section id="patents">
+  <div class="eyebrow">Intellectual property</div>
+  <h2>Patents</h2>
+  <p class="lede">As executive steward, I grew Drawbridge's patent estate from about 10 to more than 80 granted and pending assets worldwide.</p>
+  <div class="grid">
+    <article class="card">
+      <div class="tag">Drawbridge Health · Sole inventor</div>
+      <h3>Systems and Methods for Sample Collection</h3>
+      <p>The collection architecture behind the platform's post-OneDraw device generation. Filed 2022 and prosecuted internationally.</p>
+      <div class="chips">
+        <a class="chip hl" href="https://patents.google.com/patent/WO2023049404A1" target="_blank" rel="noopener">WO2023049404</a>
+        <a class="chip hl" href="https://patents.google.com/patent/EP4405655A1" target="_blank" rel="noopener">EP4405655</a>
+        <span class="chip">HK40114997</span>
+      </div>
+    </article>
+    <article class="card">
+      <div class="tag">Oova · Co-inventor with Aparna Divaraniya</div>
+      <h3>Methods, Devices, and Systems for Detecting Analyte Levels</h3>
+      <p>Quantitative analyte detection that combines assay chemistry, image acquisition and computational interpretation.</p>
+      <div class="chips">
+        <span class="chip hl">US 12,591,974</span>
+        <a class="chip hl" href="https://patents.google.com/patent/US20210264604A1" target="_blank" rel="noopener">US20210264604A1</a>
+        <span class="chip">GB2591614B</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- PRESS -->
+<section id="press">
+  <div class="eyebrow">Press &amp; recognition</div>
+  <h2>In the news</h2>
+  <p class="lede">Regulatory milestones, partnerships and financings, several of which quote me as Drawbridge Co-CEO.</p>
+  <div class="cols">
+    <div class="press"><div class="yr">2024</div><h3>FDA clears NanoDrop for OTC use</h3><p>First OTC blood-lancing device labeled for the upper arm cleared in the U.S.</p></div>
+    <div class="press"><div class="yr">2023</div><h3>NanoDrop receives CE Mark</h3><p>European certification for the dual nano-lancet platform.</p></div>
+    <div class="press"><div class="yr">2023</div><h3>MedTech Breakthrough award</h3><p>OneDraw named Best Overall Medical Device Product.</p></div>
+    <div class="press"><div class="yr">2023</div><h3>Oova raises $10.3M</h3><p>TechCrunch coverage of the financing and membership expansion.</p></div>
+    <div class="press"><div class="yr">2022</div><h3>DoD Cancer Moonshot 2.0</h3><p>OneDraw selected for PROMETHEUS multi-omics research in service members.</p></div>
+    <div class="press"><div class="yr">2022</div><h3>PMDA certification in Japan</h3><p>OneDraw's regulatory footprint expands to Japan.</p></div>
+    <div class="press"><div class="yr">2022</div><h3>Cambridge study confirms reliability</h3><p>~4,000 participants and 99.9% successful sample processing.</p></div>
+    <div class="press"><div class="yr">2022</div><h3>Thorne × GenTegra collaboration</h3><p>Preserving and recovering DNA from whole blood with OneDraw.</p></div>
+    <div class="press"><div class="yr">2021</div><h3>Thorne acquires Drawbridge</h3><p>Majority interest acquired, with Jerome named Co-CEO.</p></div>
+    <div class="press"><div class="yr">2021</div><h3>Oova seed &amp; launch</h3><p>TechCrunch covers the $1.2M seed and the product launch.</p></div>
+    <div class="press"><div class="yr">2020</div><h3>Sumitomo Dainippon partnership</h3><p>Groundwork for bringing OneDraw to Japan.</p></div>
+    <div class="press"><div class="yr">2020</div><h3>Parexel / Synexa collaboration</h3><p>Remote collection for COVID-19 trials and sero-prevalence studies.</p></div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="eyebrow">Education</div>
+  <h2>Training</h2>
+  <div class="list" style="margin-top:28px">
+    <div class="item"><div class="yr">M.S.</div><div><h3>Johns Hopkins University</h3><p>Computer Science, Biomedical Concentration</p></div></div>
+    <div class="item"><div class="yr">B.S.</div><div><h3>New York University</h3><p>Mechanical Engineering &amp; Physics · Pi Tau Sigma Honors</p></div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact">
+    <div class="eyebrow">Get in touch</div>
+    <h2>Let's talk</h2>
+    <p>I'm open to conversations about diagnostics, medical devices, biological intelligence, advisory roles and early-stage investing.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:scelzajr@gmail.com">scelzajr@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/jerome-scelza-8560b0108/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="assets/Jerome_Scelza_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+    </div>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer><div class="wrap">© <span id="y">2026</span> Jerome R. Scelza · New York, NY</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
